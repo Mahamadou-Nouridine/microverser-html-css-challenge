@@ -22,10 +22,16 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <h1 id="title">freeCodeCamp Survey Form</h1>
-<p id="description">Thank you for taking the time to help us improve the platform</p>
-<form id="survey-form">
-  <input type="text" id="name" required></input>
-</form>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name </label>
+      <input type="text" id="name" placeholder="Abdelkerim" required></input>
+      <label for="email" id="email-label">Email </label>
+      <input type="email" id="email" placeholder="ak.abdelkerim.ak@gmail.com" required>
+      <label for="number" id="number-label">Number </label>
+      <input type="number" id="number" placeholder="11" min="5" max="15">
+    
+    </form>
 
 
 
