@@ -4,39 +4,40 @@
 <head>
   <meta charset="UTF-8" />
   <title>Fork Me! FCC: Test Suite Template</title>
-  <link rel="stylesheet" href="css/style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
   <h1 id="title">freeCodeCamp Survey Form</h1>
   <p id="description">Thank you for taking the time to help us improve the platform</p>
-  
-    <form id="survey-form" class="bg-info m-auto p-5">
-      <label for="name" id="name-label">Name </label>
-      <input class="form-control" type="text" id="name" placeholder="Abdelkerim" required></input>
-      <label for="email" id="email-label">Email </label>
-      <input class="form-control" type="email" id="email" placeholder="ak.abdelkerim.ak@gmail.com" required>
-      <label for="number" id="number-label">Number </label>
-      <input class="form-control" type="number" id="number" placeholder="11" min="5" max="15">
-      
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Dropdown button
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
+
+  <form id="survey-form" class="m-auto p-5 rounded">
+    <label for="name" id="name-label">Name </label>
+    <input class="form-control" type="text" id="name" placeholder="Abdelkerim" required></input>
+    <label for="email" id="email-label">Email </label>
+    <input class="form-control" type="email" id="email" placeholder="ak.abdelkerim.ak@gmail.com" required>
+    <label for="number" id="number-label">Age(optional)</label>
+    <input class="form-control" type="number" id="number" placeholder="11" min="5" max="15">
+
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="preferNO">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
     </div>
 
+    <div class="form-group">
+      <p>Would you recommend freeCodeCamp to a friend?</p>
       <div id="radio-check">
-        <p>Would you recommend freeCodeCamp to a friend?</p>
         <div class="form-check">
           <input class="form-check-input" type="radio" value="radio 1" name="radio-input" />
           <label for="radio-input">Definitely</label>
@@ -50,82 +51,94 @@
           <input class="form-check-input" type="radio" value="radio 1" name="radio-input" />
           <label for="radio-input">Not sure</label>
         </div>
+      </div>
+    </div>
 
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown button
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
+    <div class="form-group">
+      <p>What is your favorite feature of freeCodeCamp?</p>
+      <select id="dropdown" class="form-control" required>
+        <option disabled selected value>Select an option </option>
+        <option value="student">Challenges</option>
+        <option value="job">Projects</option>
+        <option value="learner">Community</option>
+        <option value="preferNO">Open Source</option>
+      </select>
+    </div>
+
+
+    <div class="form-group">
+      <p>What would you like to see improved? (Check all that apply)</p>
+      <div class="">
+        <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="checkbox-value"
+          aria-label="Checkbox for following text input">
+        <label for="checkbox">Front-end Projects</label>
       </div>
 
-
-      <div >
-        <p>What would you like to see improved? (Check all that apply)</p>
-        <div class="">
-          <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-          <label for="checkbox">Front-end Projects</label>
-        </div>
-        
-        <div class="">
-          <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-          <label for="checkbox">Back-end Projects</label>
-        </div>
-
-        <div class="">
-          <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-          <label for="checkbox">Data Visualization</label>
-        </div>
-
-        <div class="">
-          <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-          <label for="checkbox">Challenges</label>
-        </div>
-
-        <div class="">
-          <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-          <label for="checkbox">Open Source Community</label>
-        </div>
-        <div class="">
-          <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-          <label for="checkbox">Gitter help rooms</label>
-        </div>
-        <div class="">
-          <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-          <label for="checkbox">Videos</label>
-        </div>
-        <div class="">
-          <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-          <label for="checkbox">City Meetups</label>
-        </div>
-        <div >
-          <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-          <label for="checkbox">Wiki</label>
-        </div>
-        <div class="">
-          <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-          <label for="checkbox">Forums</label>
-        </div>
-        <div class="">
-          <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-          <label for="checkbox">Additional Courses</label>
-        </div>
-
+      <div class="">
+        <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="checkbox-value"
+          aria-label="Checkbox for following text input">
+        <label for="checkbox">Back-end Projects</label>
       </div>
 
-      <div >
-        <p>Any comments or suggestions?</p>
-        <textarea class="form-control" type="text"></textarea>
+      <div class="">
+        <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="checkbox-value"
+          aria-label="Checkbox for following text input">
+        <label for="checkbox">Data Visualization</label>
       </div>
-      
-      <button class="btn btn-success" id="submit">submit</button>
 
-    </form>
- 
+      <div class="">
+        <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="checkbox-value"
+          aria-label="Checkbox for following text input">
+        <label for="checkbox">Challenges</label>
+      </div>
+
+      <div class="">
+        <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="checkbox-value"
+          aria-label="Checkbox for following text input">
+        <label for="checkbox">Open Source Community</label>
+      </div>
+      <div class="">
+        <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="checkbox-value"
+          aria-label="Checkbox for following text input">
+        <label for="checkbox">Gitter help rooms</label>
+      </div>
+      <div class="">
+        <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="checkbox-value"
+          aria-label="Checkbox for following text input">
+        <label for="checkbox">Videos</label>
+      </div>
+      <div class="">
+        <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="checkbox-value"
+          aria-label="Checkbox for following text input">
+        <label for="checkbox">City Meetups</label>
+      </div>
+      <div>
+        <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="checkbox-value"
+          aria-label="Checkbox for following text input">
+        <label for="checkbox">Wiki</label>
+      </div>
+      <div class="">
+        <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="checkbox-value"
+          aria-label="Checkbox for following text input">
+        <label for="checkbox">Forums</label>
+      </div>
+      <div class="">
+        <input name="checkbox" class="form-check-input mt-0" type="checkbox" value="checkbox-value"
+          aria-label="Checkbox for following text input">
+        <label for="checkbox">Additional Courses</label>
+      </div>
+
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea rows= 5 placeholder="enter your comment" class="form-control" type="text"></textarea>
+    </div>
+
+    <button class="btn btn-success w-100 mt-5" id="submit">submit</button>
+
+  </form>
+
 
 
   <script src="js/index.js"></script>

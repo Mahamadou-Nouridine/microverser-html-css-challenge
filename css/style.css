@@ -1,9 +1,41 @@
-#survey-form{
-    width:100%;
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    color: white;
 }
-@media only screen and (min-width: 500px){
-    #survey-form{
-        width:100%;
-        max-width: 600px;
+
+body {
+    background-color: rgb(56, 56, 135, 0.8);
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-attachment:fixed;
+    background-size: cover;
+}
+
+#survey-form {
+    width: 100%;
+    background-color: #2E2E4C;
+}
+
+body>h1 {
+    text-align: center;
+}
+
+body>p {
+    text-align: center;
+    font-style: italic;
+}
+
+#survey-form>div {
+    padding-top: 30px;
+}
+
+.form-group>p {
+    margin-bottom: -3px;
+}
+
+@media only screen and (min-width: 500px) {
+    #survey-form {
+        width: 100%;
+        max-width: 700px;
     }
 }
